@@ -9,8 +9,7 @@ interface Props {
 export const TestTextField = ({
     color,
     size = 'medium',
-    label,
-    ...props
+    label
 }: Props) => {
     return (
         <>
