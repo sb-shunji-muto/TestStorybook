@@ -1,18 +1,19 @@
 import { Container, TextField } from '@mui/material'
-import { TestButton } from './components/Button/TestButton';
+import { TestButton } from './components/TestButton/TestButton';
+import { TestTextField } from './components/TestTextField/TestTextField';
 
 function App() {
   return(
     <>
       <Container maxWidth="md" style={{ display: "flex", padding:50, flexDirection:"column", gap:50, background:"#F5F5F5", height:"100vh"}}>
 
-        <TextField id="standard-basic" label="Standard" variant="standard" />
+      <TestTextField  label="Standard-primary" color="primary"/>
 
-        <TextField id="standard-basic" label="Standard" variant="standard" color="error"/>
+      <TestTextField  label="Standard-error" color="error"/>
 
         <div style={{display:"flex", justifyContent:"right", gap:20}}>
-          <TestButton color="error" label="erroe" />
-          <TestButton color="primary" label="Succes"/>
+          <TestButton color="error" label="error" />
+          <TestButton color="primary" label="Primary"/>
         </div>
       </Container>
     </>
